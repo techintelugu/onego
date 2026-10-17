@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5faff">
+  <meta name="description" content="ONEGO — everyday services, local shops, delivery and more in one place.">
+  <title>ONEGO — Everything you need. One place.</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="ONEGO home">
+      <img src="logo.svg" alt="ONEGO logo" class="logo">
+      <span>ONE<span class="brand-accent">GO</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#partners">For partners</a>
+      <a class="nav-cta" href="#services">Get started <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR EVERYDAY, MADE EASIER</div>
+        <h1>Everything you need.<br><span>One place.</span></h1>
+        <p class="hero-description">Discover local services, neighborhood shops, delivery and everyday essentials — all in one simple place.</p>
+        <div class="search-panel">
+          <label class="search-field">
+            <span class="field-icon">⌕</span>
+            <span class="sr-only">Search services</span>
+            <input id="serviceSearch" type="search" placeholder="What do you need today?" autocomplete="off">
+          </label>
+          <label class="location-field">
+            <span class="field-icon">⌖</span>
+            <span class="sr-only">Choose location</span>
+            <select id="locationSelect" aria-label="Choose your area">
+              <option value="">Choose your area</option>
+              <option>Katriyal</option>
+              <option>Ramayampet</option>
+              <option>Nizamabad</option>
+              <option>Hyderabad</option>
+              <option>Other location</option>
+            </select>
+          </label>
+          <button class="find-btn" id="findBtn">Find services <span>→</span></button>
+        </div>
+        <div class="hero-note"><span class="check-mark">✓</span> Local needs. One easy starting point.</div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of connected everyday services">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-center"><img src="logo.svg" alt="" class="art-logo"><strong>ONEGO</strong><small>ONE PLACE. MANY POSSIBILITIES.</small></div>
+        <div class="float-card float-home"><span class="float-icon blue">⌂</span><span><b>Home services</b><small>Fix it, fast</small></span></div>
+        <div class="float-card float-shop"><span class="float-icon mint">▧</span><span><b>Local shopping</b><small>Close to you</small></span></div>
+        <div class="float-card float-delivery"><span class="float-icon purple">➜</span><span><b>Delivery</b><small>On the move</small></span></div>
+        <div class="float-card float-travel"><span class="float-icon orange">⌁</span><span><b>Travel</b><small>Get going</small></span></div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span>
+      </div>
+    </section>
+
+    <section class="service-section section-wrap" id="services">
+      <div class="section-heading">
+        <div><div class="eyebrow">ONEGO SERVICES</div><h2>What can we help with?</h2><p>Explore everyday services, all in one place.</p></div>
+        <span class="category-count" id="categoryCount">8 categories</span>
+      </div>
+      <div class="service-grid" id="serviceGrid">
+        <button class="service-card" data-category="Home Services" data-keywords="electrician plumber ac repair cleaning carpenter painter appliance repair home">
+          <span class="service-icon icon-blue">⌂</span><span class="service-title">Home services</span><span class="service-subtitle">Repairs & maintenance</span><span class="card-arrow">↗</span>
+        </button>
+        <button class="service-card" data-category="Shopping" data-keywords="groceries vegetables pharmacy stationery electronics essentials shopping local shops">
+          <span class="service-icon icon-green">▧</span><span class="service-title">Shopping</span><span class="service-subtitle">Daily needs & essentials</span><span class="card-arrow">↗</span>
+        </button>
+        <button class="service-card" data-category="Vehicle Care" data-keywords="bike car repair puncture battery wash vehicle mechanic servicing">
+          <span class="service-icon icon-orange">⌁</span><span class="service-title">Vehicle care</span><span class="service-subtitle">Repairs & roadside help</span><span class="card-arrow">↗</span>
+        </button>
+        <button class="service-card" data-category="Delivery" data-keywords="parcel food grocery document pickup delivery logistics">
+          <span class="service-icon icon-purple">➜</span><span class="service-title">Delivery</span><span class="service-subtitle">Parcels & local delivery</span><span class="card-arrow">↗</span>
+        </button>
+        <button class="service-card" data-category="Travel" data-keywords="auto bike taxi cab bus rental travel transport">
+          <span class="service-icon icon-sky">➤</span><span class="service-title">Travel</span><span class="service-subtitle">Get from A to B</span><span class="card-arrow">↗</span>
+        </button>
+        <button class="service-card" data-category="Learning & Personal" data-keywords="tutor computer repair photography beauty events printing education personal">
+          <span class="service-icon icon-pink">✳</span><span class="service-title">Learning & personal</span><span class="service-subtitle">Skills & personal help</span><span class="card-arrow">↗</span>
+        </button>
+        <button class="service-card" data-category="Professional" data-keywords="resume graphic design website accounting professional business">
+          <span class="service-icon icon-indigo">▤</span><span class="service-title">Professional</span><span class="service-subtitle">Work & business support</span><span class="card-arrow">↗</span>
+        </button>
+        <button class="service-card" data-category="More Services" data-keywords="property pet care community local services more">
+          <span class="service-icon icon-slate">•••</span><span class="service-title">More services</span><span class="service-subtitle">More for everyday life</span><span class="card-arrow">↗</span>
+        </button>
+      </div>
+      <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="section-wrap">
+        <div class="section-heading centered">
+          <div class="eyebrow">SIMPLE BY DESIGN</div><h2>A simpler way to get things done.</h2><p>One clear path from what you need to what comes next.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Find what you need</h3><p>Search for a service or explore a category.</p></article>
+          <article class="step-card"><span class="step-number">02</span><div class="step-icon">⌖</div><h3>Choose your area</h3><p>Start with the location where you need help.</p></article>
+          <article class="step-card"><span class="step-number">03</span><div class="step-icon">✓</div><h3>Take the next step</h3><p>Explore options as ONEGO services become available.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner-section section-wrap" id="partners">
+      <div class="partner-banner">
+        <div class="partner-copy"><div class="eyebrow">FOR LOCAL BUSINESSES</div><h2>Good at what you do?<br><span>Grow with ONEGO.</span></h2><p>Help more people discover your local service or shop. Partner registration can be added as the platform develops.</p><a href="mailto:hello@onego.example?subject=ONEGO%20Partner%20Interest" class="partner-btn">I'm interested <span>→</span></a></div>
+        <div class="partner-graphic"><div class="partner-circle"><img src="logo.svg" alt="ONEGO logo"></div><span class="partner-star">✦</span><span class="partner-plus">＋</span><span class="partner-dot"></span></div>
+      </div>
+    </section>
+
+    <section class="trust-section section-wrap">
+      <div class="trust-item"><span class="trust-symbol">◎</span><div><b>Local-first vision</b><p>Built around everyday community needs.</p></div></div>
+      <div class="trust-item"><span class="trust-symbol">◇</span><div><b>Simple experience</b><p>Clear categories and an easy starting point.</p></div></div>
+      <div class="trust-item"><span class="trust-symbol">↗</span><div><b>Growing step by step</b><p>Designed to expand as services become available.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top"><a class="brand footer-brand" href="#home"><img src="logo.svg" alt="ONEGO logo" class="logo"><span>ONE<span class="brand-accent">GO</span></span></a><p>Everyday needs, moving in one direction.</p></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> ONEGO. Demo website concept.</span><div><a href="#services">Explore services</a><a href="#partners">Partner with us</a><a href="mailto:hello@onego.example">Contact</a></div></div>
+    <p class="demo-note">Demo concept only — bookings, payments, live provider availability and user accounts are not connected yet.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
